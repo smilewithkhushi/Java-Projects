@@ -36,9 +36,10 @@ public class Calculator implements ActionListener {
 		Border blueline=BorderFactory.createLineBorder(Color.blue);
 		
 		//font settings
-		Font f1=new Font(Font.SERIF, Font.BOLD, 20);
-		Font f2=new Font(Font.MONOSPACED, Font.BOLD, 20);
+		Font f1=new Font(Font.SERIF, Font.BOLD, 20);   //top head
+		Font f2=new Font(Font.MONOSPACED, Font.BOLD, 20);   //calc screen
 		Font f3=new Font(Font.DIALOG, Font.BOLD, 12);
+		Font f0=new Font(Font.DIALOG, Font.BOLD, 15);	//calc buttons
 		
 		//heading calculator
 		JToggleButton head=new JToggleButton("_ Calculator Program _");
@@ -61,12 +62,17 @@ public class Calculator implements ActionListener {
 		//first row : C, %, x , divide
 		JButton jb_c=new JButton("C");
 		jb_c.setBounds(100,140,55,55);	
+		jb_c.setFont(f0);
 		JButton jb_percent=new JButton("%");
 		jb_percent.setBounds(165,140,55,55);
+		jb_percent.setFont(f0);
 		JButton jb_backspace=new JButton("<-x");
 		jb_backspace.setBounds(230,140,55,55);
+		
+		
 		JButton jb_divide=new JButton("/");
 		jb_divide.setBounds(295,140,55,55);
+		jb_divide.setFont(f0);
 				
 		jfrm.add(jb_c);
 		jfrm.add(jb_percent);
@@ -77,13 +83,17 @@ public class Calculator implements ActionListener {
 
 		JButton jb7=new JButton("7");
 		jb7.setBounds(100,200,55,55);
+		jb7.setFont(f0);
 		JButton jb8=new JButton("8");
 		jb8.setBounds(165,200,55,55);
+		jb8.setFont(f0);
 		JButton jb9=new JButton("9");
 		jb9.setBounds(230,200,55,55);
+		jb9.setFont(f0);
 		JButton jb_multiply=new JButton("x");
 		jb_multiply.setBounds(295,200,55,55);
-
+		jb_multiply.setFont(f0);
+		
 		jfrm.add(jb7);
 		jfrm.add(jb8);
 		jfrm.add(jb9);
@@ -93,13 +103,17 @@ public class Calculator implements ActionListener {
 
 		JButton jb4=new JButton("4");
 		jb4.setBounds(100,260,55,55);
+		jb4.setFont(f0);
 		JButton jb5=new JButton("5");
 		jb5.setBounds(165,260,55,55);
+		jb5.setFont(f0);
 		JButton jb6=new JButton("6");
 		jb6.setBounds(230,260,55,55);
+		jb6.setFont(f0);
 		JButton jb_minus=new JButton("-");
 		jb_minus.setBounds(295,260,55,55);
-
+		jb_minus.setFont(f0);
+		
 		jfrm.add(jb4);
 		jfrm.add(jb5);
 		jfrm.add(jb6);
@@ -108,13 +122,17 @@ public class Calculator implements ActionListener {
 		//ROW four : 1 ,2 ,3 , +
 		JButton jb1=new JButton("1");
 		jb1.setBounds(100,320,55,55);
+		jb1.setFont(f0);
 		JButton jb2=new JButton("2");
 		jb2.setBounds(165, 320,55,55);
+		jb2.setFont(f0);
 		JButton jb3=new JButton("3");
 		jb3.setBounds(230,320,55,55);
+		jb3.setFont(f0);
 		JButton jb_plus=new JButton("+");
 		jb_plus.setBounds(295,320,55,55);
-
+		jb_plus.setFont(f0);
+		
 		jfrm.add(jb1);
 		jfrm.add(jb2);
 		jfrm.add(jb3);
@@ -122,14 +140,18 @@ public class Calculator implements ActionListener {
 
 		//ROW 5 : 00, 0 , . , =
 		JButton jb_00=new JButton("00");
+		jb_00.setFont(f0);
 		jb_00.setBounds(100,380,55,55);
 		JButton jb0=new JButton("0");
 		jb0.setBounds(165, 380,55,55);
+		jb0.setFont(f0);
 		JButton jb_point=new JButton(".");
 		jb_point.setBounds(230,380,55,55);
+		jb_point.setFont(f0);
 		JButton jb_equal=new JButton("=");
 		jb_equal.setBounds(295,380,55,55);
-
+		jb_equal.setFont(f0);
+		
 		jfrm.add(jb_00);
 		jfrm.add(jb0);
 		jfrm.add(jb_point);
